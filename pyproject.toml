@@ -1,0 +1,28 @@
+[project]
+name = "vehicle-insurance"
+version = "0.1.0"
+description = "ML pipeline for vehicle insurance"
+readme = "README.md"
+authors = [
+    { name = "Anshuman Parida", email = "anshu989856@gmail.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Development Status :: 3 - Alpha",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "notebooks*", "docs*"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements.txt" }
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

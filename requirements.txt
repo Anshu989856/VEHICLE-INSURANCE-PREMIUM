@@ -1,0 +1,30 @@
+# Core Data Science Stack
+numpy>=1.23.0
+pandas>=1.5.0
+scikit-learn>=1.1.0
+matplotlib>=3.6.0
+seaborn>=0.12.0
+plotly>=5.10.0
+imblearn>=0.0  # usually part of imbalanced-learn
+
+# MLOps & Deployment
+pymongo>=4.3.0
+from_root>=1.0.0
+dill>=0.3.6
+certifi>=2022.12.7
+PyYAML>=6.0
+boto3>=1.26.0
+mypy-boto3-s3>=1.26.0
+botocore>=1.29.0
+
+# FastAPI stack
+fastapi>=0.95.0
+python-multipart>=0.0.5
+uvicorn>=0.22.0
+jinja2>=3.1.2
+
+# Jupyter/Interactive Support
+ipykernel>=6.17.0
+
+# Local package (make sure pyproject.toml exists!)
+-e .
